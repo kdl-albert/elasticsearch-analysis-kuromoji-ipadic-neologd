@@ -31,7 +31,7 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<lucene.version>8.2.0</lucene.version>
-		<kuromoji-ipadic-neologd.version>20200109</kuromoji-ipadic-neologd.version>
+		<kuromoji-ipadic-neologd.version>20200120</kuromoji-ipadic-neologd.version>
 	</properties>
 	<repositories>
 		<repository>
@@ -53,15 +53,6 @@
 				<configuration>
 					<source>${maven.compiler.source}</source>
 					<target>${maven.compiler.target}</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.22.2</version>
-				<configuration>
-					<includes>
-						<include>**/*Test.java</include>
-					</includes>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -112,19 +103,7 @@
 		<dependency>
 			<groupId>org.codelibs</groupId>
 			<artifactId>analyzers</artifactId>
-			<version>8.0.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.codelibs</groupId>
-			<artifactId>elasticsearch-cluster-runner</artifactId>
-			<version>${elasticsearch.version}.0</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.13.1</version>
-			<scope>test</scope>
+			<version>8.8.0.0</version>
 		</dependency>
 	</dependencies>
 </project>
