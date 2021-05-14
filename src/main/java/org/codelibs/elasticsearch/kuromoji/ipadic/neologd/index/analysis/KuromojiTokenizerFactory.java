@@ -23,9 +23,9 @@ import java.io.IOException;
 import java.io.Reader;
 
 import org.apache.lucene.analysis.Tokenizer;
-import org.codelibs.neologd.ipadic.lucene.analysis.ja.JapaneseTokenizer;
-import org.codelibs.neologd.ipadic.lucene.analysis.ja.JapaneseTokenizer.Mode;
-import org.codelibs.neologd.ipadic.lucene.analysis.ja.dict.UserDictionary;
+import org.kdl.neologd.ipadic.lucene.analysis.ja.JapaneseTokenizer;
+import org.kdl.neologd.ipadic.lucene.analysis.ja.JapaneseTokenizer.Mode;
+import org.kdl.neologd.ipadic.lucene.analysis.ja.dict.UserDictionary;
 import org.elasticsearch.ElasticsearchException;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.env.Environment;
